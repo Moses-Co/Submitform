@@ -1,0 +1,53 @@
+/* Default styles */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e7f0fd;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  form input,
+  form textarea {
+    width: calc(100% - 20px);
+    font-size: 16px;
+  }
+
+  form input[type="submit"] {
+    font-size: 18px;
+  }
+}
